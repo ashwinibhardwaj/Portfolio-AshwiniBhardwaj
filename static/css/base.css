@@ -700,7 +700,7 @@ section {
     text-align: center;
     max-width: 600px;
     margin: 0 auto;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.849);
   }
   
   .contact-container h2 {
