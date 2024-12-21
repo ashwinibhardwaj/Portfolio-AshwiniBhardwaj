@@ -40,6 +40,12 @@ def send_email():
         print(e)
         return jsonify({"status": "error", "message": "An error occurred while sending your message."})
     
+@app.route('/resume')
+def resume():
+    return render_template('resume.html')
+    
 # Run the app
 if __name__ == '__main__':
     app.run(debug=True)
+
+
