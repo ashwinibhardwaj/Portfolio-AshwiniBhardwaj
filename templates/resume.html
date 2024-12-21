@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Ashwini Bhardwaj</title>
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='assets/favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
+</head>
+<body>
+    <nav class="navbar"></nav>
+        <div class="navbar-container">
+            <!-- Logo -->
+            <a href="#home" class="navbar-logo">ASHWINI BHARDWAJ</a>
+
+            <!-- Navbar Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills-section2">Tools & Skills</a></li>
+                <li><a href="#projects-section">Projects</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+
+            <!-- Hamburger Icon for Mobile -->
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <div class="resume-container">
+        <h1>My Resume</h1>
+        <!-- Embedded Resume -->
+        <div class="resume-preview">
+            <iframe src="{{ url_for('static', filename='resume/Resume_Ashwini Bhardwaj.pdf') }}">
+                Your browser does not support iframes.
+            </iframe>
+        </div>
+    </div>
+</body>
+</html>
