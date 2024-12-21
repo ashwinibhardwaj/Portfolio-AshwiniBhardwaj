@@ -1,4 +1,4 @@
-from flask import Flask, render_template,jsonify,request
+from flask import Flask, render_template,jsonify,request, send_from_directory
 from flask_mail import Mail, Message
 
 
@@ -43,6 +43,10 @@ def send_email():
 @app.route('/resume')
 def resume():
     return render_template('resume.html')
+
+@app.route('/download_resume')
+def download_resume():
+    return send_from_directory('static/resume', 'Resume_Ashwini Bhardwaj.pdf', as_attachment=True)
     
 # Run the app
 if __name__ == '__main__':
