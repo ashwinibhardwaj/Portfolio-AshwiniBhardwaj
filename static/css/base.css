@@ -609,6 +609,38 @@ section {
     margin-top: 20px;
 }
 
+.see-all-btn {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(90deg, #0099a1, #008188);
+    border: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.see-all-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(90deg, #008188, #0099a1);
+}
+
+.see-all-btn:active {
+    transform: translateY(2px);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+.see-all-btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
 /* Project Card */
 .project-card {
     background: linear-gradient(145deg, #1f1f1f, #222222);
@@ -1308,6 +1340,8 @@ canvas {
     .projects-title {
         font-size: 1.5rem;
     }
+
+    
 
     .project-card {
         padding: 15px;
