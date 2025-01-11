@@ -46,7 +46,7 @@ def resume():
 
 @app.route('/download_resume')
 def download_resume():
-    return send_from_directory('static/resume', 'Resume_Ashwini Bhardwaj.pdf', as_attachment=True)
+    return send_from_directory('static/resume', 'Ashwini Bhardwaj_Resume.pdf', as_attachment=True)
     
 # Run the app
 if __name__ == '__main__':
