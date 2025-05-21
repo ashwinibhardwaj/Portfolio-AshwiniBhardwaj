@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
 
 </head>
 <body>
@@ -33,15 +34,15 @@
         </div>
     </nav>
 
-    <section id="home">
+    <section id="home" >
         
         <div class="home-content">
             
-            <div class="intro-text">
-                <div class="name">
+            <div class="intro-text"  >
+                <div class="name" data-aos="fade-up">
                 <h1> Python Developer & ML Enthusiast</h1>
             </div>
-            <div class="intro">
+            <div class="intro" data-aos="zoom-in" data-aos-delay="300">
                 <p>
                     <sup><i class="fa-solid fa-quote-left" style="font-size: 1rem;"></i></sup>  Hi, i'm Ashwini.<br>
                     With a strong foundation in Data analysis, Machine Learning, and Data visualization, 
@@ -52,7 +53,7 @@
                 </p>
             </div>
 
-            <div class="social-media">
+            <div class="social-media" data-aos="fade-up" data-aos-delay="300">
                 <a href="https://www.linkedin.com/in/ashwini-bhardwaj/" target="_blank" class="social-icon" title="LinkedIn">
                     <img src="{{ url_for('static', filename='assets/linkedin.png') }}" alt="LinkedIn" class="icon" style="width: 2.2rem; height: 2.2rem;">
                 </a>
@@ -69,7 +70,7 @@
                 
             </div>
 
-            <div class="image-container">
+            <div class="image-container"  data-aos="zoom-out" data-aos-delay="100">
                 <img src="{{ url_for('static', filename='assets/data.gif') }}" alt="Your Profile Image">
             </div>
             
@@ -78,7 +79,7 @@
     </section>
 
 
-    <div class="separator">
+    <div class="separator" data-aos="fade-up">
         <div></div>
     </div>
 
@@ -88,8 +89,8 @@
 
     <section id="about" class="about">
         
-        <div class="container">
-            <div class="profile-section">
+        <div class="container" >
+            <div class="profile-section" data-aos="fade-up">
                 <div class="profile-image">
                     <img src="{{ url_for('static', filename='assets/img2.jpg') }}" alt="Profile Picture">
                 </div>
@@ -102,7 +103,7 @@
                     I thrive on the challenge of exploring diverse datasets, applying various analytical techniques, and utilizing 
                     cutting-edge machine learning algorithms to drive decision-making and innovation. 
                 </p>
-                <div class="academic-section">
+                <div class="academic-section" data-aos="fade-up" data-aos-delay="250">
                     <h3>Academic Qualifications</h3>
                     <div class="academic-item">
                         <h4>Masters of Computer Applications</h4>
@@ -123,7 +124,7 @@
                 
             </div>
             
-            <div class="skills-section">
+            <div class="skills-section" data-aos="fade-up">
                 <h2>SKILLS</h2>
                 <div class="skills-info">
                     <div class="skill-info">
@@ -149,7 +150,7 @@
                     <canvas id="skillsChart"></canvas>
                 </div>
 
-                <div class="skills-container">
+                <div class="skills-container" data-aos="fade-up" data-aos-delay="250">
                     <div class="skill-item">
                         <i class="fas fa-database"></i>
                         <h3>Data Science</h3>
@@ -173,7 +174,7 @@
     
     </section>
 
-    <div class="separator">
+    <div class="separator" data-aos="fade-up">
         <div></div>
     </div>
 
@@ -182,122 +183,95 @@
 
 
     <section id="skills-section2" class="skills-section2">
-        <h2 class="skills-title">Tools & Languages</h2>
+        <h2 class="skills-title" data-aos="fade-up">Tools & Technologies</h2>
         <div class="skills-visualizer-container">
-            <!-- Tools -->
-            <div class="skill-item2">
-                <h3 class="skill-name2">Git & GitHub</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 60%;"></div>
-                </div>
+            <!-- Git & GitHub -->
+            <div class="skill-item2" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/git.svg" alt="Git" class="tech-logo" style="width:2.5rem;height:2.5rem;">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" alt="GitHub" class="tech-logo" style="width:2.5rem;height:2.5rem;">
+                <div class="progress-bar"><div class="progress" style="width:60%;"></div></div>
             </div>
-    
-            <div class="skill-item2">
-                <h3 class="skill-name2">VS Code</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 75%;"></div>
-                </div>
+            <!-- VS Code -->
+            <div class="skill-item2" data-aos="fade-up" data-aos-delay="120">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/visualstudiocode.svg" alt="VS Code" class="tech-logo" style="width:2.5rem;height:2.5rem;">
+                <div class="progress-bar"><div class="progress" style="width:75%;"></div></div>
             </div>
-
-            <div class="skill-item2">
-                <h3 class="skill-name2">Jupyter Notebook</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 85%;"></div>
-                </div>
+            <!-- Jupyter Notebook -->
+            <div class="skill-item2" data-aos="fade-up" data-aos-delay="140">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/jupyter.svg" alt="Jupyter Notebook" class="tech-logo" style="width:2.5rem;height:2.5rem;">
+                <div class="progress-bar"><div class="progress" style="width:85%;"></div></div>
             </div>
-
-            <div class="skill-item2">
-                <h3 class="skill-name2">Intellij IDEA</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 65%;"></div>
-                </div>
+            <!-- IntelliJ IDEA -->
+            <div class="skill-item2" data-aos="fade-up" data-aos-delay="160">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/intellijidea.svg" alt="IntelliJ IDEA" class="tech-logo" style="width:2.5rem;height:2.5rem;">
+                <div class="progress-bar"><div class="progress" style="width:65%;"></div></div>
             </div>
-    
-            <!-- Languages -->
-            <div class="skill-item2">
-                <h3 class="skill-name2">Python</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 90%;"></div>
-                </div>
+            <!-- Python -->
+            <div class="skill-item2" data-aos="fade-up" data-aos-delay="180">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/python.svg" alt="Python" class="tech-logo" style="width:2.5rem;height:2.5rem;">
+                <div class="progress-bar"><div class="progress" style="width:90%;"></div></div>
             </div>
-
-            <div class="skill-item2">
-                <h3 class="skill-name2">Java</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 65%;"></div>
-                </div>
+            <!-- Java -->
+            <div class="skill-item2" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="Java" class="tech-logo" style="width:2.5rem;height:2.5rem;">
+                <div class="progress-bar"><div class="progress" style="width:65%;"></div></div>
             </div>
-
-            <div class="skill-item2">
-                <h3 class="skill-name2">SQL</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 70%;"></div>
-                </div>
+            <!-- SQL -->
+            <div class="skill-item2" data-aos="fade-up" data-aos-delay="220">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/mysql.svg" alt="MySQL" class="tech-logo" style="width:2.5rem;height:2.5rem;">
+                <div class="progress-bar"><div class="progress" style="width:70%;"></div></div>
             </div>
-    
-            <div class="skill-item2">
-                <h3 class="skill-name2">JavaScript</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 50%;"></div>
-                </div>
+            <!-- JavaScript -->
+            <div class="skill-item2" data-aos="fade-up" data-aos-delay="240">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/javascript.svg" alt="JavaScript" class="tech-logo" style="width:2.5rem;height:2.5rem;">
+                <div class="progress-bar"><div class="progress" style="width:50%;"></div></div>
             </div>
-    
-            <!-- Libraries -->
-            <div class="skill-item2">
-                <h3 class="skill-name2">NumPy</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 85%;"></div>
-                </div>
+            <!-- NumPy -->
+            <div class="skill-item2" data-aos="fade-up" data-aos-delay="260">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/numpy.svg" alt="NumPy" class="tech-logo" style="width:2.5rem;height:2.5rem;">
+                <div class="progress-bar"><div class="progress" style="width:85%;"></div></div>
             </div>
-    
-            <div class="skill-item2">
-                <h3 class="skill-name2">Pandas</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 80%;"></div>
-                </div>
+            <!-- Pandas -->
+            <div class="skill-item2" data-aos="fade-up" data-aos-delay="280">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/pandas.svg" alt="Pandas" class="tech-logo" style="width:2.5rem;height:2.5rem;">
+                <div class="progress-bar"><div class="progress" style="width:80%;"></div></div>
             </div>
-    
-            <!-- Technologies -->
-            <div class="skill-item2">
-                <h3 class="skill-name2">sklearn</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 70%;"></div>
-                </div>
+            <!-- scikit-learn -->
+            <div class="skill-item2" data-aos="fade-up" data-aos-delay="300">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/scikitlearn.svg" alt="scikit-learn" class="tech-logo" style="width:2.5rem;height:2.5rem;">
+                <div class="progress-bar"><div class="progress" style="width:70%;"></div></div>
             </div>
-    
-            <div class="skill-item2">
-                <h3 class="skill-name2">Flask</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 75%;"></div>
-                </div>
+            <!-- Flask -->
+            <div class="skill-item2" data-aos="fade-up" data-aos-delay="320">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/flask.svg" alt="Flask" class="tech-logo" style="width:2.5rem;height:2.5rem;">
+                <div class="progress-bar"><div class="progress" style="width:75%;"></div></div>
             </div>
         </div>
     </section>
-    
 
-    <div class="separator">
+    <div class="separator" data-aos="fade-up">
         <div></div>
     </div>
 
 
 
-    <section id="projects-section" class="projects-section">
+    <section id="projects-section" class="projects-section" >
         <h2 class="projects-title">Projects</h2> 
         <div class="projects-container">
-            <div class="project-card">
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
                 <i class="project-icon fas fa-code"></i>
                 <h3 class="project-title">AutoML Tool</h3>
                 <p class="project-description">An automated machine learning tool for model generation and evaluation.This platform takes raw data, performs essential cleaning and transformation tasks, and then generates multiple machine learning models. The best-performing model can be downloaded at user's end.</p>
                 <a href="https://automate-fnkl.onrender.com/" class="project-link" target="_blank" title="live link">View Project <i class="fas fa-external-link-alt"></i></a>
             </div>
-            <div class="project-card">
+            <div class="project-card" data-aos="fade-up" data-aos-delay="150">
                 <i class="project-icon fas fa-chart-line"></i>
                 <h3 class="project-title">Stock Trend Prediction</h3>
                 <p class="project-description">LSTM based model to predict stock market trends based on historical data. By utilizing deep learning techniques, the app forecasts the price movements of stocks over time, allowing users to make informed investment decisions.</p>
                 <a href="https://github.com/ashwinibhardwaj/stock-trend-prediction" class="project-link" title="github link" target="_blank">View Project <i class="fab fa-github"></i></a>
             </div>
             
-            <div class="project-card">
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
                 <i class="project-icon fab fa-reddit reddit-icon"></i> 
                 <h3 class="project-title">Reddit Sentiment Analysis</h3>
                 <p class="project-description">This project analyzes Reddit posts and comments to visualize sentiment trends using VADER and Plotly, providing insights into community opinions and trends.</p>
@@ -308,12 +282,12 @@
     </section>
     
 
-    <div class="separator">
+    <div class="separator" data-aos="fade-up">
         <div></div>
     </div>
     
     
-    <section id="contact-section" class="contact-container">
+    <section id="contact-section" class="contact-container" data-aos="fade-up">
         <h2>Contact Me</h2>
         <p>Feel free to get in touch using the form below.</p>
         <form id="contact-form" action="/send-email" method="POST">
@@ -355,7 +329,17 @@
             </div>
     </footer>
     
+      
+    
+
     <script src="{{ url_for('static', filename='js/base.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+        duration: 800,    // animation duration in ms
+        once: false        // whether animation should happen only once
+      });
+    </script>
 
 </body>
 </html>
