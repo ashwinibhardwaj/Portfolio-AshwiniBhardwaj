@@ -559,6 +559,26 @@ section {
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
 }
 
+.skill-item2 img {
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    padding: 6px;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #00acb5c0, #00565ed0);
+    box-shadow: 0 4px 12px rgba(0, 172, 181, 0.4),
+                0 0 10px rgba(0, 172, 181, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .skill-item2 img:hover {
+    transform: scale(1.15);
+    box-shadow: 0 6px 18px rgba(0, 172, 181, 0.6),
+                0 0 15px rgba(0, 86, 94, 0.8);
+    background: linear-gradient(145deg, #00d4dd, #007e8a);
+  }
+  
+  
 /* Skill Name */
 .skill-name2 {
     font-size: 1.2rem;
