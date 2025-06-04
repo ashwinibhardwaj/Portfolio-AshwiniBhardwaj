@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Ashwini Bhardwaj</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
+</head>
+<body>
+    
+    <!-- Preloader Container -->
+    <div id="preloader" style="position: fixed; inset: 0; background: linear-gradient(135deg, #1e1e1e, #2a2a2a, #3a3a3a); display: flex; align-items: center; justify-content: center; flex-direction: column; z-index: 9999;">
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#home" class="navbar-logo" style="margin-top: 0.4rem;">ASHWINI BHARDWAJ</a>
+        </div>
+    </nav>
+    <!-- Hello Animation -->
+    <lottie-player
+        src="assets/animation.json"
+        background="transparent"
+        speed="1"
+        style="width: 300px; height: 300px;margin-bottom:0.5rem;"
+        autoplay
+    ></lottie-player>
+
+    <!-- Welcome Animation -->
+    <lottie-player
+        src="assets/hello_animation.json"
+        background="transparent"
+        speed="1"
+        style="width: 300px; height: 300px;"
+        autoplay
+    ></lottie-player>
+
+    </div>
+
+    
+    <nav class="navbar"></nav>
+        <div class="navbar-container">
+            <!-- Logo -->
+            <a href="#home" class="navbar-logo">ASHWINI BHARDWAJ</a>
+
+            <!-- Navbar Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills-section2">Tools & Skills</a></li>
+                <li><a href="#projects-section">Projects</a></li>
+                <li><a href="#contact-section">Contact</a></li>
+            </ul>
+
+            <!-- Hamburger Icon for Mobile -->
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" >
+        
+        <div class="home-content">
+            
+            <div class="intro-text"  >
+                <div class="name" data-aos="fade-up">
+                <h1> Python Developer & ML Enthusiast</h1>
+            </div>
+            <div class="intro" data-aos="zoom-in" data-aos-delay="300">
+            <p id="intro-para">
+                <sup><i class="fa-solid fa-quote-left" style="font-size: 1rem;"></i></sup>
+                Hi, I'm Ashwini.<br>
+                With a strong foundation in Data analysis, Machine Learning, and Data visualization,
+                I thrive on solving complex problems and leveraging data to drive strategic decisions.
+                My projects showcase my ability to develop innovative solutions in diverse domains,
+                from predictive analytics to automation tools. I invite you to explore my work and see
+                how I can help you harness the power of data.
+                <sup><i class="fa-solid fa-quote-right" style="font-size: 1rem;"></i></sup>
+            </p>
+            </div>
+
+
+            <div class="social-media" data-aos="fade-up" data-aos-delay="300">
+                <a href="https://www.linkedin.com/in/ashwini-bhardwaj/" target="_blank" class="social-icon" title="LinkedIn">
+                    <img src="assets/linkedin.png" alt="LinkedIn" class="icon" style="width: 2.2rem; height: 2.2rem;">
+                </a>
+                <a href="https://github.com/ashwinibhardwaj" target="_blank" class="social-icon" title="GitHub">
+                    <img src="assets/github.png" alt="GitHub" class="icon" style="    filter: brightness(0) invert(1) contrast(1.2); width: 2.3rem; height: 2.3rem;">
+                </a>
+                <a href="https://leetcode.com/u/Ashwini_Bhardwaj01/" target="_blank" class="social-icon" title="LeetCode">
+                    <img src="assets/leetcode.png" alt="LeetCode" class="icon" style="background-color: rgba(68, 68, 68, 0.925); border-radius: 20%;width: 2.2rem; height: 2.2rem;">
+                    
+                </a>
+            </div>
+            <a href="resume.html" class="download-button">Resume</a>
+                
+                
+            </div>
+
+            <div class="image-container"  data-aos="zoom-out" data-aos-delay="100">
+                <img src="assets/data.gif" alt="Your Profile Image">
+            </div>
+            
+        </div>
+        
+    </section>
+
+
+    <div class="separator" data-aos="fade-up">
+        <div></div>
+    </div>
+
+
+
+
+
+    <section id="about" class="about">
+        
+        <div class="container" >
+            <div class="profile-section" data-aos="fade-up">
+                <div class="profile-image">
+                    <img src="assets/img2.jpg" alt="Profile Picture">
+                </div>
+                <h1>ABOUT ME</h1>
+
+                <p class="about-para">
+                    I am an aspiring data scientist with a strong foundation in data analysis, machine learning, 
+                    and related fields. My journey into data science has fueled my passion for uncovering patterns
+                    and trends within complex datasets, allowing me to transform raw data into meaningful, actionable insights. 
+                    I thrive on the challenge of exploring diverse datasets, applying various analytical techniques, and utilizing 
+                    cutting-edge machine learning algorithms to drive decision-making and innovation. 
+                </p>
+                <div class="academic-section" data-aos="fade-up" data-aos-delay="250">
+                    <h3>Academic Qualifications</h3>
+                    <div class="academic-item">
+                        <h4>Masters of Computer Applications</h4>
+                        <p class="institution">VIT Bhopal University</p>
+                        <p class="duration">August 2023 - August 2025</p>
+                    </div>
+                    <div class="academic-item">
+                        <h4>Bachelors in Computer Applications</h4>
+                        <p class="institution">Birla Institute Of Technology,Mesra</p>
+                        <p class="duration">August 2020 - May 2023</p>
+                    </div>
+                </div>
+                <div class="languages">
+                    <span style="background-color: rgba(36, 36, 36, 0.753);"><b>Languages known:</b></span>
+                    <span>English</span>
+                    <span>Hindi</span>
+                </div>
+                
+            </div>
+            
+            <div class="skills-section" data-aos="fade-up">
+                <h2>SKILLS</h2>
+                <div class="skills-info">
+                    <div class="skill-info">
+                        <span class="skill-name">Data Analysis</span>
+                        <div class="color-box" style="background-color: #1e3a3b;"></div>
+                    </div>
+                    <div class="skill-info">
+                        <span class="skill-name">Machine Learning</span>
+                        <div class="color-box" style="background-color: #23395d;"></div>
+                    </div>
+                    
+                    <div class="skill-info">
+                        <span class="skill-name">Visualization</span>
+                        <div class="color-box" style="background-color: #4d004b;"></div>
+                    </div>
+                    <div class="skill-info">
+                        <span class="skill-name">Web Development</span>
+                        <div class="color-box" style="background-color: #b91c1c;"></div>
+                    </div>
+                    
+                </div>
+                <div class="skills-chart-container">
+                    <canvas id="skillsChart"></canvas>
+                </div>
+
+                <div class="skills-container" data-aos="fade-up" data-aos-delay="250">
+                    <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <h3>Data Science</h3>
+                        <p>Proficient in data analysis, statistical modeling, and data visualization, leveraging tools like Python and SQL to extract meaningful insights and drive decision-making.</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-project-diagram"></i>
+                        <h3>Machine Learning</h3>
+                        <p>Experienced in building and deploying machine learning models, including supervised and unsupervised algorithms, with expertise in libraries like Scikit-learn, TensorFlow, and PyTorch.</p>
+                    </div>
+                    <div class="skill-item">
+                        <i class="fas fa-code"></i>
+                        <h3>Development</h3>
+                        <p>Skilled in web development with experience in HTML, CSS, JavaScript, and Flask framework for backend development. </p>
+                    </div>
+                </div>
+        
+            </div>
+            
+        </div>
+    
+    </section>
+
+    <div class="separator" data-aos="fade-up">
+        <div></div>
+    </div>
+
+
+
+
+
+    <section id="skills-section2" class="skills-section2">
+        <h2 class="skills-title" data-aos="fade-up">Tools & Technologies</h2>
+        <div class="skills-visualizer-container">
+            <!-- Git & GitHub -->
+            <div class="skill-item2" data-aos="fade-up" data-aos-delay="100">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/git.svg" alt="Git" class="tech-logo" style="width:2.5rem;height:2.5rem;">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" alt="GitHub" class="tech-logo" style="width:2.5rem;height:2.5rem;">
+                <div class="progress-bar"><div class="progress" style="width:60%;"></div></div>
+            </div>
+            <!-- VS Code -->
+            <div class="skill-item2" data-aos="fade-up" data-aos-delay="120">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/visualstudiocode.svg" alt="VS Code" class="tech-logo" style="width:2.5rem;height:2.5rem;">
+                <div class="progress-bar"><div class="progress" style="width:75%;"></div></div>
+            </div>
+            <!-- Jupyter Notebook -->
+            <div class="skill-item2" data-aos="fade-up" data-aos-delay="140">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/jupyter.svg" alt="Jupyter Notebook" class="tech-logo" style="width:2.5rem;height:2.5rem;">
+                <div class="progress-bar"><div class="progress" style="width:85%;"></div></div>
+            </div>
+            <!-- IntelliJ IDEA -->
+            <div class="skill-item2" data-aos="fade-up" data-aos-delay="160">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/intellijidea.svg" alt="IntelliJ IDEA" class="tech-logo" style="width:2.5rem;height:2.5rem;">
+                <div class="progress-bar"><div class="progress" style="width:65%;"></div></div>
+            </div>
+            <!-- Python -->
+            <div class="skill-item2" data-aos="fade-up" data-aos-delay="180">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/python.svg" alt="Python" class="tech-logo" style="width:2.5rem;height:2.5rem;">
+                <div class="progress-bar"><div class="progress" style="width:90%;"></div></div>
+            </div>
+            <!-- Java -->
+            <div class="skill-item2" data-aos="fade-up" data-aos-delay="200">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="Java" class="tech-logo" style="width:2.5rem;height:2.5rem;">
+                <div class="progress-bar"><div class="progress" style="width:65%;"></div></div>
+            </div>
+            <!-- SQL -->
+            <div class="skill-item2" data-aos="fade-up" data-aos-delay="220">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/mysql.svg" alt="MySQL" class="tech-logo" style="width:2.5rem;height:2.5rem;">
+                <div class="progress-bar"><div class="progress" style="width:70%;"></div></div>
+            </div>
+            <!-- JavaScript -->
+            <div class="skill-item2" data-aos="fade-up" data-aos-delay="240">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/javascript.svg" alt="JavaScript" class="tech-logo" style="width:2.5rem;height:2.5rem;">
+                <div class="progress-bar"><div class="progress" style="width:50%;"></div></div>
+            </div>
+            <!-- NumPy -->
+            <div class="skill-item2" data-aos="fade-up" data-aos-delay="260">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/numpy.svg" alt="NumPy" class="tech-logo" style="width:2.5rem;height:2.5rem;">
+                <div class="progress-bar"><div class="progress" style="width:85%;"></div></div>
+            </div>
+            <!-- Pandas -->
+            <div class="skill-item2" data-aos="fade-up" data-aos-delay="280">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/pandas.svg" alt="Pandas" class="tech-logo" style="width:2.5rem;height:2.5rem;">
+                <div class="progress-bar"><div class="progress" style="width:80%;"></div></div>
+            </div>
+            <!-- scikit-learn -->
+            <div class="skill-item2" data-aos="fade-up" data-aos-delay="300">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/scikitlearn.svg" alt="scikit-learn" class="tech-logo" style="width:2.5rem;height:2.5rem;">
+                <div class="progress-bar"><div class="progress" style="width:70%;"></div></div>
+            </div>
+            <!-- Flask -->
+            <div class="skill-item2" data-aos="fade-up" data-aos-delay="320">
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/flask.svg" alt="Flask" class="tech-logo" style="width:2.5rem;height:2.5rem;">
+                <div class="progress-bar"><div class="progress" style="width:75%;"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <div class="separator" data-aos="fade-up">
+        <div></div>
+    </div>
+
+
+
+    <section id="projects-section" class="projects-section" >
+        <h2 class="projects-title">Projects</h2> 
+        <div class="projects-container">
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <i class="project-icon fas fa-code"></i>
+                <h3 class="project-title">AutoML Tool</h3>
+                <p class="project-description">An automated machine learning tool for model generation and evaluation.This platform takes raw data, performs essential cleaning and transformation tasks, and then generates multiple machine learning models. The best-performing model can be downloaded at user's end.</p>
+                <a href="https://automate-fnkl.onrender.com/" class="project-link" target="_blank" title="live link">View Project <i class="fas fa-external-link-alt"></i></a>
+            </div>
+            <div class="project-card" data-aos="fade-up" data-aos-delay="150">
+                <i class="project-icon fas fa-chart-line"></i>
+                <h3 class="project-title">Stock Trend Prediction</h3>
+                <p class="project-description">LSTM based model to predict stock market trends based on historical data. By utilizing deep learning techniques, the app forecasts the price movements of stocks over time, allowing users to make informed investment decisions.</p>
+                <a href="https://github.com/ashwinibhardwaj/stock-trend-prediction" class="project-link" title="github link" target="_blank">View Project <i class="fab fa-github"></i></a>
+            </div>
+            
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <i class="project-icon fab fa-reddit reddit-icon"></i> 
+                <h3 class="project-title">Reddit Sentiment Analysis</h3>
+                <p class="project-description">This project analyzes Reddit posts and comments to visualize sentiment trends using VADER and Plotly, providing insights into community opinions and trends.</p>
+                <a href="https://reddit-sentiment-analysis-x26j.onrender.com" class="project-link" title="live link" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+        <a href="projects.html" class="see-all-btn">See All Projects</a>
+    </section>
+    
+
+    <div class="separator" data-aos="fade-up">
+        <div></div>
+    </div>
+    
+    
+    <section id="contact-section" class="contact-container" data-aos="fade-up">
+        <h2>Contact Me</h2>
+        <p>Feel free to get in touch using the form below.</p>
+        <form id="contact-form" action="/send-email" method="POST">
+            <div class="form-row">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" autocomplete="off" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" autocomplete="off" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <input type="text" name="subject" placeholder="Subject" autocomplete="off" required>
+            </div>
+            <div class="form-group">
+                <textarea name="message" rows="7" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn" id="submit-btn">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-loader"></span>
+            </button>
+        </form>
+        <div id="form-status" class="form-status"></div>
+
+    </section>
+
+    
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <p>Let's connect and collaborate <i class="smile fas fa-smile"></i></p>
+            </div>
+                
+            </div>
+            <div class="top">
+                <a href="#home" class="back-to-top" aria-label="Back to top">
+                    <i class="fas fa-arrow-up"></i>
+                </a>
+            </div>
+    </footer>
+    
+      
+    
+
+    <script src="base.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init({
+        duration: 800,    // animation duration in ms
+        once: false        // whether animation should happen only once
+      });
+
+        (function() {
+            emailjs.init("THpJsO2w7b_j3r3_V"); // Replace with your actual public key
+        })();
+
+
+        // Hide the preloader when page is fully loaded
+        window.addEventListener("load", () => {
+        const preloader = document.getElementById("preloader");
+        setTimeout(() => {
+        preloader.style.transition = "opacity 0.5s ease";
+        preloader.style.opacity = "0";
+        setTimeout(() => preloader.remove(), 500);
+        }, 5000); // Show for 4 seconds
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+    const para = document.getElementById("intro-para");
+
+    const quoteStart = '<sup><i class="fa-solid fa-quote-left" style="font-size: 1rem;"></i></sup>';
+    const quoteEnd = '<sup><i class="fa-solid fa-quote-right" style="font-size: 1rem;"></i></sup>';
+
+    const text = `Hi, I'm Ashwini.<br>
+      With a strong foundation in Data analysis, Machine Learning, and Data visualization,
+      I thrive on solving complex problems and leveraging data to drive strategic decisions.
+      My projects showcase my ability to develop innovative solutions in diverse domains,
+      from predictive analytics to automation tools. I invite you to explore my work and see
+      how I can help you harness the power of data.`;
+
+    const words = text.trim().split(/\s+/);
+    
+    // Start animation after 5 seconds
+    setTimeout(() => {
+      para.innerHTML = quoteStart + " ";
+      let index = 0;
+      const interval = setInterval(() => {
+        para.innerHTML += words[index] + " ";
+        index++;
+
+        if (index === words.length) {
+          clearInterval(interval);
+          para.innerHTML += quoteEnd;
+        }
+      }, 150); // Time between each word
+    }, 5000); // 5 seconds delay
+  });
+    </script>
+
+</body>
+</html>
