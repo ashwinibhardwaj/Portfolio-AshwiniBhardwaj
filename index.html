@@ -13,6 +13,7 @@
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 
+
 </head>
 <body>
     
@@ -23,7 +24,7 @@
         src="assets/animation.json"
         background="transparent"
         speed="1"
-        style="width: 300px; height: 300px;margin-bottom:0.5rem;"
+        style="width: 250px; height: 250px; margin: 0; padding: 0;"
         autoplay
     ></lottie-player>
 
@@ -32,7 +33,7 @@
         src="assets/hello_animation.json"
         background="transparent"
         speed="1"
-        style="width: 300px; height: 300px;"
+        style="width: 300px; height: 300px; margin: 0;"
         autoplay
     ></lottie-player>
 
@@ -60,61 +61,124 @@
         </div>
     </nav>
 
-    <section id="home" >
-        
-        <div class="home-content">
-            
-            <div class="intro-text"  >
-                <div class="name" data-aos="fade-up">
-                <h1> Python Developer & ML Enthusiast</h1>
-            </div>
-            <div class="intro" data-aos="zoom-in" data-aos-delay="300">
-            <p id="intro-para">
-                <sup><i class="fa-solid fa-quote-left" style="font-size: 1rem;"></i></sup>
-                Hi, I'm Ashwini.<br>
-                With a strong foundation in Data analysis, Machine Learning, and Data visualization,
-                I thrive on solving complex problems and leveraging data to drive strategic decisions.
-                My projects showcase my ability to develop innovative solutions in diverse domains,
-                from predictive analytics to automation tools. I invite you to explore my work and see
-                how I can help you harness the power of data.
-                <sup><i class="fa-solid fa-quote-right" style="font-size: 1rem;"></i></sup>
-            </p>
-            </div>
+   <section id="home">
+  <div class="home-content">
 
+    <!-- Left Column -->
+    <div class="home-left">
+      <div class="name" data-aos="fade-up">
+        <h1>Python Developer & ML Enthusiast</h1>
+      </div>
 
-            <div class="social-media" data-aos="fade-up" data-aos-delay="300">
-                <a href="https://www.linkedin.com/in/ashwini-bhardwaj/" target="_blank" class="social-icon" title="LinkedIn">
-                    <img src="assets/linkedin.png" alt="LinkedIn" class="icon" style="width: 2.2rem; height: 2.2rem;">
-                </a>
-                <a href="https://github.com/ashwinibhardwaj" target="_blank" class="social-icon" title="GitHub">
-                    <img src="assets/github.png" alt="GitHub" class="icon" style="    filter: brightness(0) invert(1) contrast(1.2); width: 2.3rem; height: 2.3rem;">
-                </a>
-                <a href="https://leetcode.com/u/Ashwini_Bhardwaj01/" target="_blank" class="social-icon" title="LeetCode">
-                    <img src="assets/leetcode.png" alt="LeetCode" class="icon" style="background-color: rgba(68, 68, 68, 0.925); border-radius: 20%;width: 2.2rem; height: 2.2rem;">
-                    
-                </a>
-            </div>
-            <a href="resume.html" class="download-button">Resume</a>
-                
-                
-            </div>
+      <div class="intro" data-aos="zoom-in" data-aos-delay="300">
+        <p id="intro-para">
+          <sup><i class="fa-solid fa-quote-left" style="font-size: 1rem;"></i></sup>
+          Hi, I'm <strong>Ashwini</strong> — passionate about turning data into intelligent solutions.<br>
+          I specialize in Machine Learning, Data Analysis, and cutting-edge technologies like LLMs, Agentic AI, and Automation.
+          My work blends creativity with logic to solve real-world problems, and I’m always eager to build and learn.
+          <br>Explore my journey through code, collaboration, and innovation.
+          <sup><i class="fa-solid fa-quote-right" style="font-size: 1rem;"></i></sup>
+        </p>
+      </div>
 
-            <div class="image-container"  data-aos="zoom-out" data-aos-delay="100">
-                <img src="assets/data.gif" alt="Your Profile Image">
+      <div class="social-media" data-aos="fade-up">
+        <a href="https://www.linkedin.com/in/ashwini-bhardwaj/" target="_blank" title="LinkedIn">
+          <img src="assets/linkedin.png" alt="LinkedIn" class="icon">
+        </a>
+        <a href="https://github.com/ashwinibhardwaj" target="_blank" title="GitHub">
+          <img src="assets/github.png" alt="GitHub" class="icon" style="filter: brightness(0) invert(1) contrast(1.2);">
+        </a>
+        <a href="https://leetcode.com/u/Ashwini_Bhardwaj01/" target="_blank" title="LeetCode">
+          <img src="assets/leetcode.png" alt="LeetCode" class="icon" style="background-color: rgba(68, 68, 68, 0.925); border-radius: 20%;">
+        </a>
+      </div>
+
+        <a href="resume.html" class="download-button">Resume</a>
+        <a href="#projects-section" class="download-button">Projects</a>
+
+    </div>
+
+    <!-- Right Column (Decorative / Add On Content) -->
+<div class="home-right" data-aos="fade-left" data-aos-delay="300">
+  <div class="tech-carousel-section">
+    <div class="tech-carousel-card">
+      <h2>Tech Stack</h2>
+      <p style="color:#ccc; margin-top: 0.5rem;">
+        Languages, frameworks, and concepts I use to create intelligent applications.
+      </p>
+      <br>
+
+      <div class="carousel-wrapper">
+        <div class="carousel-track" id="carousel-track">
+
+          <!-- Slide 1: Python -->
+          <div class="tech-slide">
+            <div class="slide-card">
+              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python" style="height: 80px;" />
+              <h3>Python</h3>
+              <p>The foundation of my work — clean, powerful, and perfect for everything from scripts to ML.</p>
             </div>
-            
+          </div>
+
+          <!-- Slide 2: Machine Learning -->
+          <div class="tech-slide">
+            <div class="slide-card">
+              <img src="https://cdn-icons-png.flaticon.com/512/4341/4341139.png" alt="Machine Learning" style="height: 80px;" />
+              <h3>Machine Learning</h3>
+              <p>Trained classification, regression, and time-series models using real-world data.</p>
+            </div>
+          </div>
+
+          <!-- Slide 3: LLMs & Agentic AI -->
+          <div class="tech-slide">
+            <div class="slide-card">
+              <img src="https://cdn-icons-png.flaticon.com/512/10706/10706986.png" alt="LLMs AI" style="height: 80px;" />
+              <h3>LLMs & Agentic AI</h3>
+              <p>Built prompt pipelines, autonomous agents, and integrated OpenAI APIs into smart dashboards.</p>
+            </div>
+          </div>
+
+          <!-- Slide 4: Flask -->
+          <div class="tech-slide">
+            <div class="slide-card">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Flask" style="height: 80px; filter: brightness(0) invert(1) contrast(1.2);" />
+              <h3>Flask</h3>
+              <p>Created RESTful apps and ML-driven interfaces using Flask and Jinja templating.</p>
+            </div>
+          </div>
+
+          <!-- Slide 5: Data Analysis -->
+          <div class="tech-slide">
+            <div class="slide-card">
+              <img src="https://cdn-icons-png.flaticon.com/512/4276/4276425.png" alt="Data Analysis" style="height: 80px; filter: brightness(0) invert(1) contrast(1.2);" />
+              <h3>Data Analysis</h3>
+              <p>Explored and visualized data using Pandas, NumPy, Seaborn, and Matplotlib.</p>
+            </div>
+          </div>
+
+          <!-- Slide 6: Currently Learning -->
+          <div class="tech-slide">
+            <div class="slide-card">
+              <img src="https://cdn-icons-png.flaticon.com/512/3135/3135765.png" alt="Learning" style="height: 80px;" />
+              <h3>Currently Learning</h3>
+              <p>Diving deeper into FastAPI, LangChain, and deploying AI with Docker & Pinecone.</p>
+            </div>
+          </div>
+
         </div>
-        
-    </section>
+      </div>
 
+      <!-- Navigation Dots -->
+      <div class="carousel-dots" id="carousel-dots"></div>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
 
     <div class="separator" data-aos="fade-up">
         <div></div>
     </div>
-
-
-
-
 
     <section id="about" class="about">
         
@@ -212,71 +276,103 @@
 
 
     <section id="skills-section2" class="skills-section2">
-        <h2 class="skills-title" data-aos="fade-up">Tools & Technologies</h2>
-        <div class="skills-visualizer-container">
-            <!-- Git & GitHub -->
-            <div class="skill-item2" data-aos="fade-up" data-aos-delay="100">
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/git.svg" alt="Git" class="tech-logo" style="width:2.5rem;height:2.5rem;">
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/github.svg" alt="GitHub" class="tech-logo" style="width:2.5rem;height:2.5rem;">
-                <div class="progress-bar"><div class="progress" style="width:60%;"></div></div>
-            </div>
-            <!-- VS Code -->
-            <div class="skill-item2" data-aos="fade-up" data-aos-delay="120">
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/visualstudiocode.svg" alt="VS Code" class="tech-logo" style="width:2.5rem;height:2.5rem;">
-                <div class="progress-bar"><div class="progress" style="width:75%;"></div></div>
-            </div>
-            <!-- Jupyter Notebook -->
-            <div class="skill-item2" data-aos="fade-up" data-aos-delay="140">
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/jupyter.svg" alt="Jupyter Notebook" class="tech-logo" style="width:2.5rem;height:2.5rem;">
-                <div class="progress-bar"><div class="progress" style="width:85%;"></div></div>
-            </div>
-            <!-- IntelliJ IDEA -->
-            <div class="skill-item2" data-aos="fade-up" data-aos-delay="160">
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/intellijidea.svg" alt="IntelliJ IDEA" class="tech-logo" style="width:2.5rem;height:2.5rem;">
-                <div class="progress-bar"><div class="progress" style="width:65%;"></div></div>
-            </div>
-            <!-- Python -->
-            <div class="skill-item2" data-aos="fade-up" data-aos-delay="180">
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/python.svg" alt="Python" class="tech-logo" style="width:2.5rem;height:2.5rem;">
-                <div class="progress-bar"><div class="progress" style="width:90%;"></div></div>
-            </div>
-            <!-- Java -->
-            <div class="skill-item2" data-aos="fade-up" data-aos-delay="200">
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" alt="Java" class="tech-logo" style="width:2.5rem;height:2.5rem;">
-                <div class="progress-bar"><div class="progress" style="width:65%;"></div></div>
-            </div>
-            <!-- SQL -->
-            <div class="skill-item2" data-aos="fade-up" data-aos-delay="220">
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/mysql.svg" alt="MySQL" class="tech-logo" style="width:2.5rem;height:2.5rem;">
-                <div class="progress-bar"><div class="progress" style="width:70%;"></div></div>
-            </div>
-            <!-- JavaScript -->
-            <div class="skill-item2" data-aos="fade-up" data-aos-delay="240">
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/javascript.svg" alt="JavaScript" class="tech-logo" style="width:2.5rem;height:2.5rem;">
-                <div class="progress-bar"><div class="progress" style="width:50%;"></div></div>
-            </div>
-            <!-- NumPy -->
-            <div class="skill-item2" data-aos="fade-up" data-aos-delay="260">
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/numpy.svg" alt="NumPy" class="tech-logo" style="width:2.5rem;height:2.5rem;">
-                <div class="progress-bar"><div class="progress" style="width:85%;"></div></div>
-            </div>
-            <!-- Pandas -->
-            <div class="skill-item2" data-aos="fade-up" data-aos-delay="280">
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/pandas.svg" alt="Pandas" class="tech-logo" style="width:2.5rem;height:2.5rem;">
-                <div class="progress-bar"><div class="progress" style="width:80%;"></div></div>
-            </div>
-            <!-- scikit-learn -->
-            <div class="skill-item2" data-aos="fade-up" data-aos-delay="300">
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/scikitlearn.svg" alt="scikit-learn" class="tech-logo" style="width:2.5rem;height:2.5rem;">
-                <div class="progress-bar"><div class="progress" style="width:70%;"></div></div>
-            </div>
-            <!-- Flask -->
-            <div class="skill-item2" data-aos="fade-up" data-aos-delay="320">
-                <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/flask.svg" alt="Flask" class="tech-logo" style="width:2.5rem;height:2.5rem;">
-                <div class="progress-bar"><div class="progress" style="width:75%;"></div></div>
-            </div>
-        </div>
-    </section>
+  <h2 class="skills-title" data-aos="fade-up">Tools & Technologies</h2>
+  <div class="skills-visualizer-container">
+
+    <!-- Languages -->
+    <div class="skill-item2" data-aos="fade-up" data-aos-delay="100">
+      <div class="skill-icon"><i class="fas fa-code"></i></div>
+      <h3>Languages</h3>
+      <div class="skill-badges">
+        <span class="skill-badge"><i class="fab fa-python"></i> Python</span>
+        <span class="skill-badge"><i class="fab fa-java"></i> Java</span>
+        <span class="skill-badge">C</span>
+        <span class="skill-badge"><i class="fab fa-js"></i> JavaScript</span>
+        <span class="skill-badge">SQL</span>
+      </div>
+    </div>
+
+    <!-- Web -->
+    <div class="skill-item2" data-aos="fade-up" data-aos-delay="100">
+      <div class="skill-icon"><i class="fas fa-globe"></i></div>
+      <h3>Web & Frameworks</h3>
+      <div class="skill-badges">
+        <span class="skill-badge"><i class="fab fa-html5"></i> HTML</span>
+        <span class="skill-badge"><i class="fab fa-css3-alt"></i> CSS</span>
+        <span class="skill-badge">Flask</span>
+        <span class="skill-badge">Streamlit</span>
+        <span class="skill-badge">REST APIs</span>
+      </div>
+    </div>
+
+    <!-- ML / AI / NLP -->
+    <div class="skill-item2" data-aos="fade-up" data-aos-delay="100">
+      <div class="skill-icon"><i class="fas fa-brain"></i></div>
+      <h3>ML / AI / NLP</h3>
+      <div class="skill-badges">
+        <span class="skill-badge">Scikit-learn</span>
+        <span class="skill-badge">TensorFlow</span>
+        <span class="skill-badge">Keras</span>
+        <span class="skill-badge">LangChain</span>
+        <span class="skill-badge">LLMs</span>
+        <span class="skill-badge">NLTK</span>
+        <span class="skill-badge">SpaCy</span>
+        <span class="skill-badge">VADER</span>
+      </div>
+    </div>
+
+    <!-- Data Tools -->
+    <div class="skill-item2" data-aos="fade-up" data-aos-delay="120">
+      <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+      <h3>Data Analysis & Viz</h3>
+      <div class="skill-badges">
+        <span class="skill-badge">Pandas</span>
+        <span class="skill-badge">NumPy</span>
+        <span class="skill-badge">Plotly</span>
+        <span class="skill-badge">Matplotlib</span>
+        <span class="skill-badge">DVC</span>
+        <span class="skill-badge">Databricks</span>
+      </div>
+    </div>
+
+    <!-- Databases -->
+    <div class="skill-item2" data-aos="fade-up" data-aos-delay="120">
+      <div class="skill-icon"><i class="fas fa-database"></i></div>
+      <h3>Databases</h3>
+      <div class="skill-badges">
+        <span class="skill-badge">MySQL</span>
+        <span class="skill-badge">SQLite</span>
+      </div>
+    </div>
+
+    <!-- Tools -->
+    <div class="skill-item2" data-aos="fade-up" data-aos-delay="120">
+      <div class="skill-icon"><i class="fas fa-tools"></i></div>
+      <h3>Tools & IDEs</h3>
+      <div class="skill-badges">
+        <span class="skill-badge"><i class="fab fa-git-alt"></i> Git</span>
+        <span class="skill-badge"><i class="fab fa-github"></i> GitHub</span>
+        <span class="skill-badge">Postman</span>
+        <span class="skill-badge">VS Code</span>
+        <span class="skill-badge">IntelliJ</span>
+        <span class="skill-badge">Jupyter</span>
+      </div>
+    </div>
+
+    <!-- Deployment -->
+    <div class="skill-item2" data-aos="fade-up" data-aos-delay="120">
+      <div class="skill-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+      <h3>Deployment & Platforms</h3>
+      <div class="skill-badges">
+        <span class="skill-badge">Railway</span>
+        <span class="skill-badge">Render</span>
+        <span class="skill-badge">GitHub Pages</span>
+        <span class="skill-badge">Heroku</span>
+      </div>
+    </div>
+
+  </div>
+</section>
 
     <div class="separator" data-aos="fade-up">
         <div></div>
@@ -287,25 +383,102 @@
     <section id="projects-section" class="projects-section" >
         <h2 class="projects-title">Projects</h2> 
         <div class="projects-container">
-            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                <i class="project-icon fas fa-code"></i>
-                <h3 class="project-title">AutoML Tool</h3>
-                <p class="project-description">An automated machine learning tool for model generation and evaluation.This platform takes raw data, performs essential cleaning and transformation tasks, and then generates multiple machine learning models. The best-performing model can be downloaded at user's end.</p>
-                <a href="https://automate-fnkl.onrender.com/" class="project-link" target="_blank" title="live link">View Project <i class="fas fa-external-link-alt"></i></a>
+            <div class="project-wrapper" style="position: relative;" data-aos="fade-up" data-aos-delay="200">
+                <!-- Floating Live Demo Button -->
+                <a href="https://datahelpai.up.railway.app/" 
+                class="live-link-bubble" 
+                target="_blank" 
+                title="Live Demo">
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+
+                <!-- Project Card -->
+                <div class="project-card">
+                    <i class="project-icon fas fa-database"></i>
+                    <h3 class="project-title">DataHelp.AI</h3>
+                    <p class="project-description">
+                        An agentic AI assistant that helps users explore and understand their datasets. It provides dataset insights, preprocessing suggestions, and an interactive chat interface powered by LLMs to answer questions about the uploaded data.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/ashwinibhardwaj/DataHelp.AI" 
+                        class="project-link" 
+                        target="_blank" 
+                        title="GitHub Repository">
+                            View Project <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="project-card" data-aos="fade-up" data-aos-delay="150">
-                <i class="project-icon fas fa-chart-line"></i>
-                <h3 class="project-title">Stock Trend Prediction</h3>
-                <p class="project-description">LSTM based model to predict stock market trends based on historical data. By utilizing deep learning techniques, the app forecasts the price movements of stocks over time, allowing users to make informed investment decisions.</p>
-                <a href="https://github.com/ashwinibhardwaj/stock-trend-prediction" class="project-link" title="github link" target="_blank">View Project <i class="fab fa-github"></i></a>
+
+            <!-- AutoML Tool -->
+            <div class="project-wrapper" style="position: relative;" data-aos="fade-up" data-aos-delay="100">
+                <a href="https://github.com/ashwinibhardwaj/AutoMate" 
+                class="live-link-bubble" 
+                target="_blank" 
+                title="Live Demo">
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+
+                <div class="project-card">
+                    <i class="project-icon fas fa-code"></i>
+                    <h3 class="project-title">AutoML Tool</h3>
+                    <p class="project-description">
+                        An automated machine learning tool for model generation and evaluation. This platform takes raw data, performs essential cleaning and transformation tasks, and then generates multiple machine learning models. The best-performing model can be downloaded at user's end.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/ashwinibhardwaj/AutoMate" class="project-link" target="_blank" title="GitHub Repository">
+                            View Project <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            
-            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                <i class="project-icon fab fa-reddit reddit-icon"></i> 
-                <h3 class="project-title">Reddit Sentiment Analysis</h3>
-                <p class="project-description">This project analyzes Reddit posts and comments to visualize sentiment trends using VADER and Plotly, providing insights into community opinions and trends.</p>
-                <a href="https://reddit-sentiment-analysis-x26j.onrender.com" class="project-link" title="live link" target="_blank">View Project <i class="fas fa-external-link-alt"></i></a>
+
+            <!-- Stock Trend Prediction -->
+            <div class="project-wrapper" style="position: relative;" data-aos="fade-up" data-aos-delay="150">
+                <a href="https://github.com/ashwinibhardwaj/stock-trend-prediction" 
+                class="live-link-bubble" 
+                target="_blank" 
+                title="Live Demo">
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+
+                <div class="project-card">
+                    <i class="project-icon fas fa-chart-line"></i>
+                    <h3 class="project-title">Stock Trend Prediction</h3>
+                    <p class="project-description">
+                        LSTM based model to predict stock market trends based on historical data. By utilizing deep learning techniques, the app forecasts the price movements of stocks over time, allowing users to make informed investment decisions.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/ashwinibhardwaj/stock-trend-prediction" class="project-link" target="_blank" title="GitHub Repository">
+                            View Project <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
+
+            <!-- Reddit Sentiment Analysis -->
+            <div class="project-wrapper" style="position: relative;" data-aos="fade-up" data-aos-delay="200">
+                <a href="https://reddit-sentiment-analysis-x26j.onrender.com" 
+                class="live-link-bubble" 
+                target="_blank" 
+                title="Live Demo">
+                    <i class="fas fa-external-link-alt"></i>
+                </a>
+
+                <div class="project-card">
+                    <i class="project-icon fab fa-reddit reddit-icon"></i>
+                    <h3 class="project-title">Reddit Sentiment Analysis</h3>
+                    <p class="project-description">
+                        This project analyzes Reddit posts and comments to visualize sentiment trends using VADER and Plotly, providing insights into community opinions and trends.
+                    </p>
+                    <div class="project-links">
+                        <a href="https://github.com/ashwinibhardwaj/reddit-sentiment-analysis" class="project-link" target="_blank" title="GitHub Repository">
+                            View Project <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <a href="projects.html" class="see-all-btn">See All Projects</a>
     </section>
@@ -382,39 +555,97 @@
         preloader.style.transition = "opacity 0.5s ease";
         preloader.style.opacity = "0";
         setTimeout(() => preloader.remove(), 500);
-        }, 5000); // Show for 4 seconds
+        }, 3000); 
     });
 
     document.addEventListener("DOMContentLoaded", () => {
-    const para = document.getElementById("intro-para");
+  const para = document.getElementById("intro-para");
 
-    const quoteStart = '<sup><i class="fa-solid fa-quote-left" style="font-size: 1rem;"></i></sup>';
-    const quoteEnd = '<sup><i class="fa-solid fa-quote-right" style="font-size: 1rem;"></i></sup>';
+  const quoteStart = '<sup><i class="fa-solid fa-quote-left" style="font-size: 1rem;"></i></sup>';
+  const quoteEnd = '<sup><i class="fa-solid fa-quote-right" style="font-size: 1rem;"></i></sup>';
 
-    const text = `Hi, I'm Ashwini.<br>
-      With a strong foundation in Data analysis, Machine Learning, and Data visualization,
-      I thrive on solving complex problems and leveraging data to drive strategic decisions.
-      My projects showcase my ability to develop innovative solutions in diverse domains,
-      from predictive analytics to automation tools. I invite you to explore my work and see
-      how I can help you harness the power of data.`;
+  const text = `Hi, I'm <strong>Ashwini</strong> — a Python developer and AI enthusiast driven by curiosity and creativity.
+I specialize in Machine Learning, Data Analysis, and emerging fields like LLMs, Agentic AI, and AutoML tools.
+From building intelligent platforms to deploying scalable solutions, I blend logic with innovation to tackle real-world challenges.
+Join me on a journey of code, learning, and meaningful tech-driven impact.`;
 
-    const words = text.trim().split(/\s+/);
-    
-    // Start animation after 5 seconds
-    setTimeout(() => {
-      para.innerHTML = quoteStart + " ";
-      let index = 0;
-      const interval = setInterval(() => {
-        para.innerHTML += words[index] + " ";
-        index++;
+  const words = text.trim().split(/\s+/);
 
-        if (index === words.length) {
-          clearInterval(interval);
-          para.innerHTML += quoteEnd;
-        }
-      }, 150); // Time between each word
-    }, 5000); // 5 seconds delay
+  // Start animation after 3 seconds
+  setTimeout(() => {
+    para.innerHTML = quoteStart + " "; // Add opening quote
+    let index = 0;
+    const interval = setInterval(() => {
+      para.innerHTML += words[index] + " "; // Append next word
+      index++;
+
+      // Apply smooth transition to each word
+      para.style.transition = "opacity 0.3s ease-out";  // Optional: smooth transition for each word
+
+      // Stop when all words are printed
+      if (index === words.length) {
+        clearInterval(interval);
+        para.innerHTML += quoteEnd; // Add closing quote
+      }
+    }, 30); // Reduced interval time for smoother typing effect
+  }, 3000); // 3 seconds delay before animation starts
+});
+
+// auto slide
+
+const track = document.getElementById("carousel-track");
+  const slides = document.querySelectorAll(".tech-slide");
+  const dotsContainer = document.getElementById("carousel-dots");
+
+  let currentIndex = 0;
+  let slideInterval;
+
+  // Create dots
+  slides.forEach((_, index) => {
+    const dot = document.createElement("span");
+    if (index === 0) dot.classList.add("active");
+    dotsContainer.appendChild(dot);
   });
+
+  const dots = document.querySelectorAll(".carousel-dots span");
+
+  function updateSlide() {
+    track.style.transform = `translateX(-${currentIndex * 100}%)`;
+
+    dots.forEach(dot => dot.classList.remove("active"));
+    dots[currentIndex].classList.add("active");
+  }
+
+  function nextSlide() {
+    currentIndex = (currentIndex + 1) % slides.length;
+    updateSlide();
+  }
+
+  function startAutoSlide() {
+    slideInterval = setInterval(nextSlide, 4000);
+  }
+
+  function stopAutoSlide() {
+    clearInterval(slideInterval);
+  }
+
+  // Dots click
+  dots.forEach((dot, i) => {
+    dot.addEventListener("click", () => {
+      currentIndex = i;
+      updateSlide();
+    });
+  });
+
+  // Pause on hover/touch
+  const wrapper = document.querySelector(".carousel-wrapper");
+  wrapper.addEventListener("mouseenter", stopAutoSlide);
+  wrapper.addEventListener("mouseleave", startAutoSlide);
+  wrapper.addEventListener("touchstart", stopAutoSlide);
+  wrapper.addEventListener("touchend", startAutoSlide);
+
+  startAutoSlide();
+
     </script>
 
 </body>
