@@ -148,7 +148,7 @@ section {
 
 /* ===== Home Section ===== */
 #home {
-  background: linear-gradient(135deg, #111, #1b1b1b);
+background-color: transparent;
   color: white;
   padding: 80px 20px;
   width: 100%;
@@ -158,23 +158,23 @@ section {
 /* ===== Home Content ===== */
 .home-content {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   max-width: 1200px;
+  box-sizing: border-box;
   margin: 0 auto;
-  gap: 2rem;
   flex-wrap: wrap;
-  width: 100%;
-  padding: 0 20px;
+  padding: 20px;
+  overflow-x: hidden;
 }
 
 /* ===== Left Column ===== */
 .home-left {
   flex: 1;
-  min-width: 300px;
-  width: 100%;
+    padding: 20px;
+    margin-right: 30px;
 }
+
 
 .name h1 {
   color: #e0e0e0;
@@ -257,12 +257,10 @@ section {
 
 /* ===== Right Column ===== */
 .home-right {
-  flex: 1;
-  min-width: 300px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  margin: 0 auto;
+  padding: 10px; 
+  
 }
 
 /* ===== Carousel Section with Animated Background ===== */
@@ -431,20 +429,24 @@ section {
 @media (max-width: 768px) {
    .home-content {
     flex-direction: column;
-    align-items: center !important;
-    justify-content: center !important;
-    padding: 0 16px;
-    margin: 0 auto;
-    width: 100%;
-    box-sizing: border-box;
+    margin-left: 10px;
+    margin-right: 10px; 
+    max-width: calc(100% - 20px); 
   }
 
+
   .home-left {
-    width: 100%;
     text-align: center !important;
-    margin: 0 auto !important;
-    padding: 0 10px;
+    margin: 0 0 20px; 
+    padding: 15px;
   }
+
+  .home-right{
+    width: 90%; 
+    padding: 10px;
+    margin: 0 auto 20px;
+  }
+        
 
   .intro {
     text-align: justify !important;
@@ -464,7 +466,16 @@ section {
     justify-content: center !important;
   }
   
+  .tech-carousel-card {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 1.5rem;
+    box-sizing: border-box;
+  }
   .tech-carousel-section {
+    padding: 0;
+    width: 100vw;
     max-width: 100%;
     margin: 2rem 1rem;
     border-radius: 12px;
@@ -497,31 +508,24 @@ section {
 
 
 @media (max-width: 468px) {
-  .home-content {
-    flex-direction: column;
-    align-items: center !important;
-    justify-content: center !important;
-    padding-left: 20px;   /* More left padding */
-    padding-right: 60px;  /* Extra right spacing */
-    box-sizing: border-box;
-    width: 100%;
-    margin: 0 auto;
-  }
+  .home-content {    
+    margin-left: 5px; 
+    margin-right: 5px; 
+    max-width: calc(100% - 5px);
+    padding: 10px;
+    width: 100%; 
+  } 
 
   .home-left {
-    width: 100%;
-    text-align: center !important;
-    padding-left: 0;
-    padding-right: 60px; /* extra right space */
-    margin: 0 auto;
+    width: 100vw;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
   }
 
   .home-right{
+    padding:10px;
     width: 100%;
-    text-align: center !important;
-    padding-left: 0;
-    padding-right: 60px; /* extra right space */
-    margin: 0 auto;
   }
 
   .name h1 {
@@ -532,10 +536,12 @@ section {
 
   .intro {
     font-size: 0.9rem;
-    padding: 1rem;
+    padding: 1rem 1rem;
     text-align: justify;
-    margin: 1rem 0;
+    margin:0;
     box-sizing: border-box;
+    width: 100vw;
+    max-width: 100%;
   }
 
   .social-media {
@@ -545,22 +551,28 @@ section {
   }
 
   .download-button {
-    font-size: 0.85rem;
-    padding: 6px 16px;
-    margin: 12px auto;
-    display: block;
+    margin-bottom: 5rem;
   }
 
-  .tech-carousel-section {
+  .tech-carousel-card {
+    width: 100vw;
     max-width: 100%;
-    margin: 1.5rem 0.8rem;
+    padding: 1rem 1rem;
+    border-radius: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  .tech-carousel-section {
+    width: 100vw;
+    max-width: 100%;
     border-radius: 8px;
-    padding: 1.2rem;
+    padding: 0;
+    margin: 0;
   }
 
   .slide-card {
     width: 100%;
-    padding: 0;
+    padding: 10px 20px;
   }
 
   .slide-card h3 {
